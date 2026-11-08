@@ -24,7 +24,7 @@
     </nav>
     <div class="kopf__aktion">
       <button class="schrift" type="button" aria-pressed="false" id="schrift" title="Schrift größer oder kleiner stellen"><span aria-hidden="true">A</span><span aria-hidden="true" class="gross">A</span><span class="sr">Schrift größer</span></button>
-      <a class="knopf knopf--tel" href="tel:+4925539733555"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>02553 9733555</span></a>
+      <a class="knopf knopf--tel" href="tel:+4925539733555" aria-label="Anrufen: 02553 9733555"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>02553 9733555</span></a>
     </div>
   </div>
 </header>
@@ -102,7 +102,7 @@
         <button role="tab" id="r-beratung" aria-controls="b-beratung" aria-selected="false" tabindex="-1">Beratung &amp; Anträge</button>
       </div>
 
-      <article class="mappe__blatt" role="tabpanel" id="b-grund" aria-labelledby="r-grund">
+      <div class="mappe__blatt" role="tabpanel" id="b-grund" aria-labelledby="r-grund">
         <div class="mappe__text">
           <h3>Grundpflege</h3>
           <p>Hilfe bei allem, was der Alltag braucht: Körperpflege, Essen und Trinken, Bewegung.</p>
@@ -118,9 +118,9 @@
           <img class="notiz" src="img/slogan.svg" alt="" width="314" height="82">
           <p class="notiz-unter">steht auf jeder unserer Mappen</p>
         </div>
-      </article>
+      </div>
 
-      <article class="mappe__blatt" role="tabpanel" id="b-behandlung" aria-labelledby="r-behandlung" hidden>
+      <div class="mappe__blatt" role="tabpanel" id="b-behandlung" aria-labelledby="r-behandlung" hidden>
         <div class="mappe__text">
           <h3>Behandlungspflege</h3>
           <p>Was Ihr Arzt verordnet, übernehmen unsere Pflegefachkräfte. Die Kosten trägt in der Regel die Krankenkasse.</p>
@@ -136,9 +136,9 @@
           <a class="link-pfeil" href="#anfrage" data-preset="anliegen:pflege">Behandlungspflege anfragen</a>
         </div>
         <img class="mappe__foto" src="img/blutdruck.jpg" alt="Blutdruckmessung am Oberarm" width="1100" height="529" loading="lazy">
-      </article>
+      </div>
 
-      <article class="mappe__blatt" role="tabpanel" id="b-betreuung" aria-labelledby="r-betreuung" hidden>
+      <div class="mappe__blatt" role="tabpanel" id="b-betreuung" aria-labelledby="r-betreuung" hidden>
         <div class="mappe__text">
           <h3>Betreuung &amp; Hauswirtschaft</h3>
           <p>Ausgebildete Betreuungskräfte kommen ein- oder mehrmals in der Woche. Sie gehen spazieren, begleiten zu Arzt- und Therapieterminen, trinken zusammen Kaffee oder spielen Gesellschaftsspiele. Dazu Hilfe im Haushalt.</p>
@@ -146,9 +146,9 @@
           <a class="link-pfeil" href="#anfrage" data-preset="anliegen:betreuung">Betreuung anfragen</a>
         </div>
         <img class="mappe__foto" src="img/kalender.jpg" alt="Kalender mit Kugelschreiber" width="1100" height="522" loading="lazy">
-      </article>
+      </div>
 
-      <article class="mappe__blatt" role="tabpanel" id="b-beratung" aria-labelledby="r-beratung" hidden>
+      <div class="mappe__blatt" role="tabpanel" id="b-beratung" aria-labelledby="r-beratung" hidden>
         <div class="mappe__text">
           <h3>Beratung &amp; Anträge</h3>
           <p>Wir beraten über alle Möglichkeiten der Pflege zu Hause und was sie kosten. Gern kommen wir dafür zu Ihnen nach Hause, <strong>kostenlos und unverbindlich</strong>.</p>
@@ -161,7 +161,7 @@
           <a class="link-pfeil" href="#anfrage" data-preset="anliegen:beratung">Beratung zu Hause vereinbaren</a>
         </div>
         <figure class="mappe__fig"><img class="mappe__foto" src="img/beratung.jpg" alt="Zwei Personen gehen am Tisch gemeinsam Unterlagen durch" width="1100" height="619" loading="lazy"><figcaption>Beispielbild</figcaption></figure>
-      </article>
+      </div>
     </div>
   </div>
 </section>
