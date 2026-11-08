@@ -2,14 +2,6 @@
   "use strict";
   var doc = document.documentElement;
 
-  /* ---- Schrift größer ---- */
-  var schrift = document.getElementById("schrift");
-  try { if (localStorage.getItem("hih-gross") === "1") { doc.classList.add("gross"); schrift.setAttribute("aria-pressed", "true"); } } catch (e) {}
-  schrift.addEventListener("click", function () {
-    var an = doc.classList.toggle("gross");
-    schrift.setAttribute("aria-pressed", an ? "true" : "false");
-    try { localStorage.setItem("hih-gross", an ? "1" : "0"); } catch (e) {}
-  });
 
   /* ---- Register (Tabs) ---- */
   function register(liste) {

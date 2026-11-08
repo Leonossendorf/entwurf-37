@@ -9,6 +9,7 @@
 <link rel="icon" href="img/logo-kopf.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
+<script>(function(){var c=document.documentElement.classList;try{var f=localStorage.getItem("hih-fs");if(f)c.add("fs-"+f);var b=localStorage.getItem("hih-bf");if(b)b.split(",").forEach(function(n){c.add("bf-"+n);});}catch(e){}})();</script>
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -23,7 +24,31 @@
       <a href="#stellen" class="kopf__stellen">Stellen <span>7</span></a>
     </nav>
     <div class="kopf__aktion">
-      <button class="schrift" type="button" aria-pressed="false" id="schrift" title="Schrift größer oder kleiner stellen"><span aria-hidden="true">A</span><span aria-hidden="true" class="gross">A</span><span class="sr">Schrift größer</span></button>
+      <div class="bf">
+        <button type="button" class="bf-knopf" id="bf-knopf" aria-expanded="false" aria-controls="bf-menue"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="24" fill="#23408f"/><circle cx="24" cy="11.5" r="4.2" fill="#fff"/><path d="M11 17.6c8.2 2.4 17.8 2.4 26 0l1 3.6c-3.9 1.2-7.9 1.9-11.8 2.1v5l3.4 13.4-3.6.9-3.3-12.4h-1.4l-3.3 12.4-3.6-.9 3.4-13.4v-5c-3.9-.2-7.9-.9-11.8-2.1z" fill="#fff"/></svg><span class="bf-wort">Barrierefreiheit</span></button>
+        <div class="bf-menue" id="bf-menue" role="group" aria-labelledby="bf-titel" hidden>
+          <div class="bf-kopfzeile"><p class="bf-titel" id="bf-titel">Barrierefreiheit</p><button type="button" class="bf-zu" id="bf-zu" aria-label="Menü schließen">×</button></div>
+          <p class="bf-name" id="bf-schrift">Schriftgröße</p>
+          <div class="bf-wahl" role="group" aria-labelledby="bf-schrift">
+            <button type="button" data-fs="0" aria-pressed="true">Normal</button>
+            <button type="button" data-fs="1" aria-pressed="false">Groß</button>
+            <button type="button" data-fs="2" aria-pressed="false">Sehr groß</button>
+          </div>
+          <div class="bf-schalter">
+            <button type="button" data-bf="kontrast" aria-pressed="false">Starker Kontrast</button>
+            <button type="button" data-bf="zeilen" aria-pressed="false">Mehr Zeilenabstand</button>
+            <button type="button" data-bf="links" aria-pressed="false">Links hervorheben</button>
+            <button type="button" data-bf="ruhig" aria-pressed="false">Bewegungen aus</button>
+            <button type="button" id="bf-vorlesen" aria-pressed="false" hidden>Seite vorlesen</button>
+          </div>
+          <p class="bf-hinweis" id="bf-vorlesen-hinweis">Vorlesen: Auf diesem Gerät ist keine deutsche Stimme eingerichtet.</p>
+          <ul class="bf-verweise">
+            <li><a href="leichte-sprache.html">Leichte Sprache</a></li>
+            <li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li>
+          </ul>
+          <button type="button" class="bf-zurueck" id="bf-zurueck">Alles zurücksetzen</button>
+        </div>
+      </div>
       <a class="knopf knopf--tel" href="tel:+4925539733555" aria-label="Anrufen: 02553 9733555"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>02553 9733555</span></a>
     </div>
   </div>
@@ -240,6 +265,7 @@
         <legend>Für wen? <span class="opt">(Angabe optional)</span></legend>
         <label><input type="radio" name="fuer" value="selbst"><span>Für mich</span></label>
         <label><input type="radio" name="fuer" value="eltern"><span>Mutter oder Vater</span></label>
+        <label><input type="radio" name="fuer" value="grosseltern"><span>Oma oder Opa</span></label>
         <label><input type="radio" name="fuer" value="partner"><span>Partnerin oder Partner</span></label>
         <label><input type="radio" name="fuer" value="andere"><span>Jemand anderes</span></label>
       </fieldset>
@@ -428,7 +454,7 @@
     </div>
   </div>
   <div class="innen fuss__unten">
-    <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="barrierefreiheit.html">Barrierefreiheit</a> · <a href="leichte-sprache.html">Leichte Sprache</a></p>
     <p class="entwurf">Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt der Hand in Hand Pflegedienst Holtmann-Niehues GmbH.</p>
   </div>
 </footer>
@@ -439,6 +465,7 @@
   <a href="#stellen">Bewerben</a>
 </nav>
 
+<script src="js/bf.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
