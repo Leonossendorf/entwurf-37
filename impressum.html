@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de-DE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Impressum – Hand in Hand Pflegedienst (Entwurf)</title><link rel="icon" href="img/logo-kopf.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="kopf"><div class="kopf__innen"><a class="kopf__logo" href="index.html"><img src="img/logo-kopf.svg" alt="Hand in Hand Pflegedienst, zur Startseite" width="170" height="70"></a></div></header>
+<main class="abschnitt"><div class="innen innen--schmal"><h1 style="color:var(--mappe-dk)">Impressum</h1><p>Im Entwurf nicht ausgefüllt. In der fertigen Website steht hier das vollständige Impressum des Pflegedienstes.</p>
+<p><a class="link-pfeil" href="index.html">Zur Startseite</a></p>
+<div class="formular" style="margin-top:40px"><h2 style="font-size:1.4rem">Frage ans Büro</h2>
+<form id="form-anfrage" class="formular" style="box-shadow:none;border:0;padding:0" novalidate>
+<div class="feld"><label for="k-tel">Telefon</label><input id="k-tel" name="telefon" type="tel"></div>
+<div class="feld"><label for="k-mail">oder E-Mail</label><input id="k-mail" name="email" type="email"></div>
+<div class="feld"><label for="k-text">Nachricht <span class="opt">(Angabe optional)</span></label><textarea id="k-text" name="nachricht" rows="3"></textarea></div>
+<p class="fehler" role="alert" hidden>Bitte eine Telefonnummer oder E-Mail-Adresse angeben.</p>
+<button class="knopf" type="submit">Senden</button> <span class="klein">Entwurf, wird nicht versendet.</span>
+<div class="danke" hidden tabindex="-1"><p class="danke__titel">Danke!</p><p>In der fertigen Seite ginge die Nachricht jetzt ans Büro. Dieser Entwurf verschickt nichts.</p></div>
+</form></div></div></main>
+<footer class="fuss" style="padding-bottom:40px"><div class="innen"><p class="entwurf">Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt der Hand in Hand Pflegedienst Holtmann-Niehues GmbH.</p></div></footer>
+<script>
+document.getElementById('form-anfrage').addEventListener('submit',function(e){e.preventDefault();var f=this;var ok=f.telefon.value.trim()||f.email.value.trim();f.querySelector('.fehler').hidden=!!ok;if(ok){var d=f.querySelector('.danke');d.hidden=false;d.focus();}});
+</script></body></html>

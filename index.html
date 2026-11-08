@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hand in Hand Pflegedienst Ochtrup – Pflege zu Hause (Entwurf)</title>
+<meta name="description" content="Unverbindlicher Entwurf: ambulante Pflege, Betreuung und Beratung in Ochtrup.">
+<link rel="icon" href="img/logo-kopf.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="kopf" id="kopf">
+  <div class="kopf__innen">
+    <a class="kopf__logo" href="#" aria-label="Hand in Hand Pflegedienst, zur Startseite"><img src="img/logo-kopf.svg" alt="Hand in Hand Pflegedienst" width="170" height="70"></a>
+    <nav class="kopf__nav" aria-label="Hauptmenü">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#fragen">Fragen &amp; Kosten</a>
+      <a href="#team">Team</a>
+      <a href="#stellen" class="kopf__stellen">Stellen <span>7</span></a>
+    </nav>
+    <div class="kopf__aktion">
+      <button class="schrift" type="button" aria-pressed="false" id="schrift" title="Schrift größer oder kleiner stellen"><span aria-hidden="true">A</span><span aria-hidden="true" class="gross">A</span><span class="sr">Schrift größer</span></button>
+      <a class="knopf knopf--tel" href="tel:+4925539733555"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>02553 9733555</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="inhalt">
+
+<!-- ===== Erstes Bild: das Blatt aus der Mappe ===== -->
+<section class="hero" aria-label="Willkommen">
+  <figure class="hero__bild">
+    <picture>
+      <source media="(max-width: 760px)" srcset="img/mappe-handy.jpg">
+      <img src="img/mappe.jpg" alt="Eine Pflegekraft trägt die blaue Hand-in-Hand-Mappe unter dem Arm" width="1271" height="847" fetchpriority="high">
+    </picture>
+  </figure>
+
+  <div class="blatt" id="blatt">
+    <div class="register" role="tablist" aria-label="Wofür sind Sie hier?">
+      <button role="tab" id="tab-pflege" aria-controls="seite-pflege" aria-selected="true">Pflege<span class="lang"> zu Hause</span></button>
+      <button role="tab" id="tab-arbeit" aria-controls="seite-arbeit" aria-selected="false" tabindex="-1"><span class="lang">Arbeiten bei uns</span><span class="kurz">Stellen</span> <span class="zahl">7</span></button>
+      <button role="tab" id="tab-buero" aria-controls="seite-buero" aria-selected="false" tabindex="-1"><span class="lang">Erreichbarkeit</span><span class="kurz">Büro</span></button>
+    </div>
+
+    <div class="blatt__seite" role="tabpanel" id="seite-pflege" aria-labelledby="tab-pflege">
+      <h1>Pflege zu Hause in&nbsp;Ochtrup.</h1>
+      <p class="blatt__text">Grund- und Behandlungspflege, Betreuung, Hauswirtschaft und Beratung. Hand in Hand mit Ihnen als Familie, mit Ihrem Arzt und der Pflegekasse.</p>
+      <div class="blatt__knoepfe">
+        <a class="knopf" href="#anfrage" data-preset="anliegen:pflege">Pflege anfragen</a>
+        <a class="link-pfeil" href="#fragen">Was zahlt die Pflegekasse?</a>
+      </div>
+      <p class="status" data-status><span class="status__punkt"></span><span data-status-text>Bürozeiten Mo–Do 9–13, Fr 9–12 Uhr</span></p>
+    </div>
+
+    <div class="blatt__seite" role="tabpanel" id="seite-arbeit" aria-labelledby="tab-arbeit" hidden>
+      <h2 class="blatt__titel">Sieben Stellen offen. Bewerben geht in zwei Minuten.</h2>
+      <ul class="haken">
+        <li>Vergütung nach TVöD, Urlaubs- und Weihnachtsgeld</li>
+        <li>135&nbsp;% Zulage am Wochenende und an Feiertagen</li>
+        <li>Dienste passend zu Kita- und Schulzeiten</li>
+        <li>Dienstwagen, Betriebsrente, unbefristet</li>
+      </ul>
+      <div class="blatt__knoepfe">
+        <a class="knopf" href="#stellen">Stellen ansehen und bewerben</a>
+      </div>
+    </div>
+
+    <div class="blatt__seite" role="tabpanel" id="seite-buero" aria-labelledby="tab-buero" hidden>
+      <h2 class="blatt__titel">So erreichen Sie uns</h2>
+      <p class="status status--gross" data-status><span class="status__punkt"></span><span data-status-text>Bürozeiten Mo–Do 9–13, Fr 9–12 Uhr</span></p>
+      <dl class="zeiten">
+        <div><dt>Montag bis Donnerstag</dt><dd>9 – 13 Uhr</dd></div>
+        <div><dt>Freitag</dt><dd>9 – 12 Uhr</dd></div>
+      </dl>
+      <div class="blatt__knoepfe">
+        <a class="knopf" href="tel:+4925539733555">02553 9733555 anrufen</a>
+        <a class="link-pfeil" href="#anfrage" data-preset="anliegen:frage">Rückruf anfragen</a>
+      </div>
+      <p class="klein">Bahnhofstraße 51, 48607 Ochtrup · <a href="https://www.openstreetmap.org/search?query=Bahnhofstra%C3%9Fe%2051%2C%2048607%20Ochtrup" rel="noopener">Auf der Karte zeigen</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Leistungen als Registerblätter ===== -->
+<section class="abschnitt" id="leistungen" aria-labelledby="leistungen-titel">
+  <div class="innen">
+    <header class="abschnitt__kopf">
+      <h2 id="leistungen-titel">Was wir für Sie übernehmen</h2>
+      <p>Wir kommen zu Ihnen nach Hause. Was wir dort tun, besprechen wir vorher in Ruhe mit Ihnen und Ihrer Familie.</p>
+    </header>
+
+    <div class="mappe" data-mappe>
+      <div class="mappe__reiter" role="tablist" aria-label="Leistungen">
+        <button role="tab" id="r-grund" aria-controls="b-grund" aria-selected="true">Grundpflege</button>
+        <button role="tab" id="r-behandlung" aria-controls="b-behandlung" aria-selected="false" tabindex="-1">Behandlungspflege</button>
+        <button role="tab" id="r-betreuung" aria-controls="b-betreuung" aria-selected="false" tabindex="-1">Betreuung &amp; Haushalt</button>
+        <button role="tab" id="r-beratung" aria-controls="b-beratung" aria-selected="false" tabindex="-1">Beratung &amp; Anträge</button>
+      </div>
+
+      <article class="mappe__blatt" role="tabpanel" id="b-grund" aria-labelledby="r-grund">
+        <div class="mappe__text">
+          <h3>Grundpflege</h3>
+          <p>Hilfe bei allem, was der Alltag braucht: Körperpflege, Essen und Trinken, Bewegung.</p>
+          <ul class="liste">
+            <li>Körper-, Haar- und Nagelpflege</li>
+            <li>Betten, Lagern, Mobilisieren</li>
+            <li>Hilfe bei der Nahrungsaufnahme</li>
+            <li>Begleitung zu Arzt und Behörden</li>
+          </ul>
+          <a class="link-pfeil" href="#anfrage" data-preset="anliegen:pflege">Grundpflege anfragen</a>
+        </div>
+        <div class="mappe__notiz" aria-hidden="true">
+          <img class="notiz" src="img/slogan.svg" alt="" width="314" height="82">
+          <p class="notiz-unter">steht auf jeder unserer Mappen</p>
+        </div>
+      </article>
+
+      <article class="mappe__blatt" role="tabpanel" id="b-behandlung" aria-labelledby="r-behandlung" hidden>
+        <div class="mappe__text">
+          <h3>Behandlungspflege</h3>
+          <p>Was Ihr Arzt verordnet, übernehmen unsere Pflegefachkräfte. Die Kosten trägt in der Regel die Krankenkasse.</p>
+          <ul class="liste liste--zwei">
+            <li>Medikamente richten und geben</li>
+            <li>Blutdruck und Blutzucker</li>
+            <li>Injektionen</li>
+            <li>Kompressionsverbände</li>
+            <li>Port- und Stomaversorgung</li>
+            <li>Dekubitusversorgung</li>
+          </ul>
+          <p class="hervor"><strong>Chronische Wunden</strong> versorgt bei uns eine Fachtherapeutin Wunde nach ICW aus dem eigenen Team.</p>
+          <a class="link-pfeil" href="#anfrage" data-preset="anliegen:pflege">Behandlungspflege anfragen</a>
+        </div>
+        <img class="mappe__foto" src="img/blutdruck.jpg" alt="Blutdruckmessung am Oberarm" width="1100" height="529" loading="lazy">
+      </article>
+
+      <article class="mappe__blatt" role="tabpanel" id="b-betreuung" aria-labelledby="r-betreuung" hidden>
+        <div class="mappe__text">
+          <h3>Betreuung &amp; Hauswirtschaft</h3>
+          <p>Ausgebildete Betreuungskräfte kommen ein- oder mehrmals in der Woche. Sie gehen spazieren, begleiten zu Arzt- und Therapieterminen, trinken zusammen Kaffee oder spielen Gesellschaftsspiele. Dazu Hilfe im Haushalt.</p>
+          <p class="hervor">Mit jedem Pflegegrad (1 bis 5) stehen dafür bis zu <strong>131&nbsp;€ im Monat</strong> zur Verfügung, der sogenannte Entlastungsbetrag.</p>
+          <a class="link-pfeil" href="#anfrage" data-preset="anliegen:betreuung">Betreuung anfragen</a>
+        </div>
+        <img class="mappe__foto" src="img/kalender.jpg" alt="Kalender mit Kugelschreiber" width="1100" height="522" loading="lazy">
+      </article>
+
+      <article class="mappe__blatt" role="tabpanel" id="b-beratung" aria-labelledby="r-beratung" hidden>
+        <div class="mappe__text">
+          <h3>Beratung &amp; Anträge</h3>
+          <p>Wir beraten über alle Möglichkeiten der Pflege zu Hause und was sie kosten. Gern kommen wir dafür zu Ihnen nach Hause, <strong>kostenlos und unverbindlich</strong>.</p>
+          <ul class="liste">
+            <li>Häusliche Pflege und Finanzierung</li>
+            <li>Fragen zur Pflegeversicherung</li>
+            <li>Anträge bei Kranken- und Pflegekasse und beim Sozialamt</li>
+            <li>Schulung für pflegende Angehörige</li>
+          </ul>
+          <a class="link-pfeil" href="#anfrage" data-preset="anliegen:beratung">Beratung zu Hause vereinbaren</a>
+        </div>
+        <figure class="mappe__fig"><img class="mappe__foto" src="img/beratung.jpg" alt="Zwei Personen gehen am Tisch gemeinsam Unterlagen durch" width="1100" height="619" loading="lazy"><figcaption>Beispielbild</figcaption></figure>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Woche und Fragen ===== -->
+<section class="abschnitt abschnitt--himmel" id="fragen" aria-labelledby="fragen-titel">
+  <div class="innen raster-fragen">
+    <div class="woche-block">
+      <h2 id="fragen-titel">Antworten, auch wenn das Büro zu ist</h2>
+      <p>Gepflegt wird an allen sieben Tagen. Das Büro ist werktags am Vormittag besetzt. Die wichtigsten Fragen beantworten wir deshalb hier, und Ihren Rückrufwunsch nehmen wir jederzeit an.</p>
+      <figure class="woche" aria-label="Wochenübersicht: Pflege an sieben Tagen, Büro Montag bis Freitag vormittags">
+        <div class="woche__zeile"><span class="woche__name">Pflege</span>
+          <span class="woche__tag voll" title="Montag">Mo</span><span class="woche__tag voll">Di</span><span class="woche__tag voll">Mi</span><span class="woche__tag voll">Do</span><span class="woche__tag voll">Fr</span><span class="woche__tag voll">Sa</span><span class="woche__tag voll">So</span></div>
+        <div class="woche__zeile"><span class="woche__name">Büro</span>
+          <span class="woche__tag halb">Mo</span><span class="woche__tag halb">Di</span><span class="woche__tag halb">Mi</span><span class="woche__tag halb">Do</span><span class="woche__tag drittel">Fr</span><span class="woche__tag leer">Sa</span><span class="woche__tag leer">So</span></div>
+        <figcaption>Hier auf der Seite: jederzeit</figcaption>
+      </figure>
+    </div>
+
+    <div class="fragen">
+      <details open>
+        <summary>Was zahlt die Pflegekasse für Pflege zu Hause?</summary>
+        <div>
+          <p>Für Pflege durch einen Pflegedienst (Pflegesachleistung) zahlt die Pflegekasse monatlich bis zu:</p>
+          <table class="tabelle">
+            <thead><tr><th scope="col">Pflegegrad</th><th scope="col">bis zu</th></tr></thead>
+            <tbody>
+              <tr><td>2</td><td>796 €</td></tr><tr><td>3</td><td>1.497 €</td></tr><tr><td>4</td><td>1.859 €</td></tr><tr><td>5</td><td>2.299 €</td></tr>
+            </tbody>
+          </table>
+          <p>Dazu kommen bis zu 131 € Entlastungsbetrag im Monat. Pflegegeld und Sachleistung lassen sich kombinieren. Wir rechnen das gern mit Ihnen durch.</p>
+          <p class="quelle">Stand 2026, Quelle: Bundesgesundheitsministerium, Leistungsbeträge 2026</p>
+        </div>
+      </details>
+      <details>
+        <summary>Wir haben noch keinen Pflegegrad. Was tun?</summary>
+        <div><p>Den Antrag stellen Sie bei der Pflegekasse, ein Anruf oder ein formloses Schreiben reicht. Die Pflegekasse muss in der Regel innerhalb von 25 Arbeitstagen entscheiden. Die Leistungen gibt es rückwirkend ab dem Monat, in dem Sie den Antrag gestellt haben. Beim Antrag helfen wir Ihnen.</p>
+        <p class="quelle">§ 18c und § 33 SGB XI</p></div>
+      </details>
+      <details>
+        <summary>Wer zahlt Spritzen, Verbände und Medikamentengabe?</summary>
+        <div><p>Das ist Behandlungspflege. Ihr Arzt verordnet sie, die Krankenkasse übernimmt die Kosten. Die gesetzliche Zuzahlung beträgt 10 % für höchstens 28 Tage im Jahr plus 10 € je Verordnung. Abgerechnet wird direkt mit der Kasse.</p>
+        <p class="quelle">§ 37 und § 61 SGB V</p></div>
+      </details>
+      <details>
+        <summary>Wofür kann ich die 131 € Entlastungsbetrag nutzen?</summary>
+        <div><p>Zum Beispiel für unsere Betreuung und Hilfe im Haushalt. Was im Jahr nicht verbraucht wird, kann bis Ende Juni des Folgejahres genutzt werden. Für Körperpflege gilt der Betrag nur bei Pflegegrad 1.</p>
+        <p class="quelle">§ 45b SGB XI</p></div>
+      </details>
+      <details>
+        <summary>Kommt jemand zur Beratung zu uns nach Hause?</summary>
+        <div><p>Ja. Wir beraten Sie bei Ihnen zu Hause, kostenlos und unverbindlich. Am einfachsten schreiben Sie uns unten kurz, wann es passt.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Anfrage ===== -->
+<section class="abschnitt" id="anfrage" aria-labelledby="anfrage-titel">
+  <div class="innen innen--schmal">
+    <header class="abschnitt__kopf">
+      <h2 id="anfrage-titel">Anfrage und Rückruf</h2>
+      <p>Ein paar Klicks reichen. Wir rufen Sie zu den Bürozeiten zurück.</p>
+    </header>
+
+    <form class="formular" id="form-anfrage" novalidate>
+      <fieldset class="wahl">
+        <legend>Worum geht es?</legend>
+        <label><input type="radio" name="anliegen" value="pflege" checked><span>Pflege anfragen</span></label>
+        <label><input type="radio" name="anliegen" value="beratung"><span>Beratung zu Hause</span></label>
+        <label><input type="radio" name="anliegen" value="betreuung"><span>Betreuung &amp; Haushalt</span></label>
+        <label><input type="radio" name="anliegen" value="frage"><span>Frage ans Büro</span></label>
+      </fieldset>
+
+      <fieldset class="wahl">
+        <legend>Für wen? <span class="opt">(Angabe optional)</span></legend>
+        <label><input type="radio" name="fuer" value="selbst"><span>Für mich</span></label>
+        <label><input type="radio" name="fuer" value="eltern"><span>Mutter oder Vater</span></label>
+        <label><input type="radio" name="fuer" value="partner"><span>Partnerin oder Partner</span></label>
+        <label><input type="radio" name="fuer" value="andere"><span>Jemand anderes</span></label>
+      </fieldset>
+
+      <fieldset class="wahl">
+        <legend>Ab wann? <span class="opt">(Angabe optional)</span></legend>
+        <label><input type="radio" name="ab" value="sofort"><span>So bald wie möglich</span></label>
+        <label><input type="radio" name="ab" value="entlassung"><span>Nach dem Krankenhaus</span></label>
+        <label><input type="radio" name="ab" value="spaeter"><span>In einigen Wochen</span></label>
+      </fieldset>
+
+      <fieldset class="wahl wahl--klein">
+        <legend>Pflegegrad <span class="opt">(Angabe optional)</span></legend>
+        <label><input type="radio" name="grad" value="keiner"><span>Noch keiner</span></label>
+        <label><input type="radio" name="grad" value="beantragt"><span>Beantragt</span></label>
+        <label><input type="radio" name="grad" value="1"><span>1</span></label>
+        <label><input type="radio" name="grad" value="2"><span>2</span></label>
+        <label><input type="radio" name="grad" value="3"><span>3</span></label>
+        <label><input type="radio" name="grad" value="4"><span>4</span></label>
+        <label><input type="radio" name="grad" value="5"><span>5</span></label>
+      </fieldset>
+
+      <div class="felder">
+        <div class="feld">
+          <label for="a-tel">Telefon für den Rückruf</label>
+          <input id="a-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel">
+        </div>
+        <div class="feld">
+          <label for="a-mail">oder E-Mail</label>
+          <input id="a-mail" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="feld">
+          <label for="a-name">Name <span class="opt">(Angabe optional)</span></label>
+          <input id="a-name" name="name" type="text" autocomplete="name">
+        </div>
+        <div class="feld">
+          <label for="a-zeit">Wann erreichen wir Sie? <span class="opt">(Angabe optional)</span></label>
+          <select id="a-zeit" name="zeit"><option value="">egal</option><option>vormittags</option><option>mittags</option></select>
+        </div>
+        <div class="feld feld--breit">
+          <label for="a-text">Nachricht <span class="opt">(Angabe optional)</span></label>
+          <textarea id="a-text" name="nachricht" rows="3"></textarea>
+          <p class="hinweis">Bitte keine Diagnosen eintragen. Das besprechen wir am Telefon.</p>
+        </div>
+      </div>
+      <p class="fehler" role="alert" hidden>Bitte eine Telefonnummer oder E-Mail-Adresse angeben, damit wir Sie erreichen.</p>
+      <div class="formular__ende">
+        <button class="knopf knopf--gross" type="submit">Anfrage senden</button>
+        <p class="klein">Entwurf, wird nicht versendet.</p>
+      </div>
+      <div class="danke" hidden tabindex="-1">
+        <p class="danke__titel">Danke, Ihre Anfrage ist angekommen.</p>
+        <p>In der fertigen Seite landet sie jetzt direkt im Büro, und wir melden uns zu den Bürozeiten bei Ihnen. Dieser Entwurf verschickt nichts.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Team ===== -->
+<section class="abschnitt abschnitt--himmel" id="team" aria-labelledby="team-titel">
+  <div class="innen">
+    <header class="abschnitt__kopf">
+      <h2 id="team-titel">Ihre Ansprechpartnerinnen</h2>
+      <p>„Ganz besonders freuen wir uns, wenn wir Sie persönlich kennenlernen dürfen.“</p>
+    </header>
+    <ul class="team">
+      <li>
+        <img src="img/de-jager.jpg" alt="Porträt Elke de Jager" width="560" height="560" loading="lazy">
+        <h3>Elke de Jager</h3>
+        <p class="rolle">Pflegedienstleitung</p>
+        <p>Altenpflegerin, Fachtherapeutin Wunde nach ICW, Praxisanleiterin</p>
+      </li>
+      <li>
+        <img src="img/niehues.jpg" alt="Porträt Birgit Niehues" width="560" height="560" loading="lazy">
+        <h3>Birgit Niehues</h3>
+        <p class="rolle">Geschäftsführerin, stv. Pflegedienstleitung</p>
+        <p>Examinierte Krankenschwester, Qualitätsbeauftragte</p>
+      </li>
+      <li>
+        <img src="img/heitmann-rohe.jpg" alt="Porträt Monika Heitmann-Rohe" width="560" height="560" loading="lazy">
+        <h3>Monika Heitmann-Rohe</h3>
+        <p class="rolle">Betreuung und Hauswirtschaft</p>
+        <p>Koordination und Büro</p>
+      </li>
+    </ul>
+    <p class="team__unter">Dahinter steht ein Team aus Pflegefachkräften, Pflegeassistenz, Betreuung und Hauswirtschaft, das laufend geschult wird.</p>
+  </div>
+</section>
+
+<!-- ===== Stellen ===== -->
+<section class="abschnitt abschnitt--mappe" id="stellen" aria-labelledby="stellen-titel">
+  <div class="innen raster-stellen">
+    <div>
+      <h2 id="stellen-titel">Arbeiten bei Hand in Hand</h2>
+      <p class="einleitung">Ein sehr kollegiales Miteinander, Dienste passend zu Kita und Schule und ein Auto für die Tour. Quereinsteiger sind willkommen.</p>
+      <ul class="stellen" aria-label="Offene Stellen, antippen zum Auswählen">
+        <li><button type="button" data-stelle="Pflegefachkraft">Pflegefachkraft</button></li>
+        <li><button type="button" data-stelle="Krankenpflegehelfer/in LK 1 + 2">Krankenpflegehelfer/in <small>mit LK 1 und LK 2</small></button></li>
+        <li><button type="button" data-stelle="Pflegefachassistenz LK 1 + 2">Pflegefachassistenz <small>mit LK 1 und LK 2</small></button></li>
+        <li><button type="button" data-stelle="Medizinische Fachangestellte">Arzthelfer/in fürs Büro <small>mit 2 Jahren Erfahrung</small></button></li>
+        <li><button type="button" data-stelle="Wochenende und Feiertage">Teilzeit am Wochenende <small>und an Feiertagen</small></button></li>
+        <li><button type="button" data-stelle="Ausbildung Pflegefachfrau/-mann">Ausbildung Pflegefachfrau/-mann</button></li>
+        <li><button type="button" data-stelle="Ausbildung Pflegefachassistenz">Ausbildung Pflegefachassistenz</button></li>
+      </ul>
+      <h3 class="klein-titel">Das haben Sie bei uns</h3>
+      <ul class="vorteile">
+        <li><strong>TVöD</strong> Vergütung nach Tarif, Urlaubs- und Weihnachtsgeld</li>
+        <li><strong>135&nbsp;%</strong> Zulage am Wochenende und an Feiertagen</li>
+        <li><strong>Kita &amp; Schule</strong> Dienstzeiten, die dazu passen</li>
+        <li><strong>Dienstwagen</strong> für die Touren</li>
+        <li><strong>Sicherheit</strong> unbefristet, mit Betriebsrente</li>
+        <li><strong>Weiterkommen</strong> Fortbildung, Aufstieg, Wiedereinstieg</li>
+      </ul>
+    </div>
+
+    <form class="formular formular--karte" id="form-bewerbung" novalidate>
+      <h3 class="formular__titel">Bewerbung in zwei Minuten</h3>
+      <p class="klein">Kein Anschreiben nötig. Wir melden uns bei Ihnen.</p>
+      <div class="feld">
+        <label for="b-stelle">Stelle</label>
+        <select id="b-stelle" name="stelle">
+          <option value="">Bitte wählen oder Initiativbewerbung</option>
+          <option>Pflegefachkraft</option>
+          <option>Krankenpflegehelfer/in LK 1 + 2</option>
+          <option>Pflegefachassistenz LK 1 + 2</option>
+          <option>Medizinische Fachangestellte</option>
+          <option>Wochenende und Feiertage</option>
+          <option>Ausbildung Pflegefachfrau/-mann</option>
+          <option>Ausbildung Pflegefachassistenz</option>
+          <option>Initiativbewerbung / Quereinstieg</option>
+        </select>
+      </div>
+      <fieldset class="wahl wahl--klein">
+        <legend>Wie viel möchten Sie arbeiten? <span class="opt">(Angabe optional)</span></legend>
+        <label><input type="radio" name="umfang" value="voll"><span>Vollzeit</span></label>
+        <label><input type="radio" name="umfang" value="teil"><span>Teilzeit</span></label>
+        <label><input type="radio" name="umfang" value="mini"><span>Minijob</span></label>
+        <label><input type="radio" name="umfang" value="wochenende"><span>Nur Wochenende</span></label>
+      </fieldset>
+      <div class="feld">
+        <label for="b-tel">Telefon</label>
+        <input id="b-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel">
+      </div>
+      <div class="feld">
+        <label for="b-mail">oder E-Mail</label>
+        <input id="b-mail" name="email" type="email" autocomplete="email">
+      </div>
+      <div class="feld">
+        <label for="b-name">Name <span class="opt">(Angabe optional)</span></label>
+        <input id="b-name" name="name" type="text" autocomplete="name">
+      </div>
+      <div class="feld">
+        <label for="b-datei">Lebenslauf oder Zeugnis <span class="opt">(Angabe optional)</span></label>
+        <input id="b-datei" name="datei" type="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+      </div>
+      <p class="fehler" role="alert" hidden>Bitte eine Telefonnummer oder E-Mail-Adresse angeben.</p>
+      <button class="knopf knopf--hell knopf--gross" type="submit">Bewerbung abschicken</button>
+      <p class="klein">Entwurf, wird nicht versendet.</p>
+      <div class="danke" hidden tabindex="-1">
+        <p class="danke__titel">Danke für Ihre Bewerbung!</p>
+        <p>In der fertigen Seite geht sie jetzt an die Pflegedienstleitung, die sich bei Ihnen meldet. Dieser Entwurf verschickt nichts.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="fuss">
+  <div class="innen fuss__raster">
+    <div>
+      <img src="img/logo.svg" alt="Hand in Hand Pflegedienst – So geht’s mir gut!" width="200" height="110" class="fuss__logo">
+    </div>
+    <div>
+      <h2 class="fuss__titel">Hand in Hand Pflegedienst<br>Holtmann-Niehues GmbH</h2>
+      <p>Bahnhofstraße 51<br>48607 Ochtrup</p>
+      <p><a href="https://www.openstreetmap.org/search?query=Bahnhofstra%C3%9Fe%2051%2C%2048607%20Ochtrup" rel="noopener">Auf der Karte zeigen</a></p>
+    </div>
+    <div>
+      <h2 class="fuss__titel">Kontakt</h2>
+      <p>Telefon <a href="tel:+4925539733555">02553 9733555</a><br>Fax 02553 9734660<br><a href="mailto:info@pflegedienst-ochtrup.de">info@pflegedienst-ochtrup.de</a></p>
+    </div>
+    <div>
+      <h2 class="fuss__titel">Büro</h2>
+      <p>Mo – Do 9 – 13 Uhr<br>Fr 9 – 12 Uhr</p>
+    </div>
+  </div>
+  <div class="innen fuss__unten">
+    <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    <p class="entwurf">Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt der Hand in Hand Pflegedienst Holtmann-Niehues GmbH.</p>
+  </div>
+</footer>
+
+<nav class="daumen" aria-label="Schnellzugriff">
+  <a href="tel:+4925539733555">Anrufen</a>
+  <a href="#anfrage" data-preset="anliegen:pflege">Anfrage</a>
+  <a href="#stellen">Bewerben</a>
+</nav>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
