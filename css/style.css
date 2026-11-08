@@ -27,7 +27,8 @@ img{max-width:100%;height:auto;display:block}
 a{color:var(--mappe);text-underline-offset:.18em}
 a:hover{color:var(--mappe-dk)}
 :focus-visible{outline:3px solid #e07b00;outline-offset:3px;border-radius:4px}
-h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em;overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em;overflow-wrap:break-word}
+html.fs-1 h1,html.fs-1 h2,html.fs-1 h3,html.fs-2 h1,html.fs-2 h2,html.fs-2 h3{hyphens:auto;-webkit-hyphens:auto}
 h2{font-size:clamp(1.7rem,1.2rem + 1.8vw,2.45rem);font-weight:760;color:var(--mappe-dk)}
 h3{font-size:1.35rem;font-weight:720}
 p{margin:0 0 1em}
